@@ -19,11 +19,16 @@ class Food private constructor(builder: Builder) {
         fun condiments(condiments: String) = apply { infoFood.condiments = condiments }
         fun meat(meat: String) = apply { infoFood.meat = meat }
         fun fish(fish: String) = apply { infoFood.fish = fish }
-        fun build() = Food(this)
+        fun build() {
+            if (infoFood.bread != null)
+                Food(this)
+            else throw IllegalStateException("can't create Valid Object")
+        }
 
     }
 
 }
+
 //more improvments
 class InfoFood {
     var bread: String? = null

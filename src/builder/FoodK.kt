@@ -17,7 +17,11 @@ data class FoodK(
         fun condiments(condiments: String) = apply { this.condiments = condiments }
         fun meat(meat: String) = apply { this.meat = meat }
         fun fish(fish: String) = apply { this.fish = fish }
-        fun build() = FoodK(bread, condiments, meat, fish)
+        fun build() {
+            if (bread != "")
+                FoodK(bread, condiments, meat, fish)
+            else throw IllegalStateException("can't create Valid Object")
+        }
     }
 }
 

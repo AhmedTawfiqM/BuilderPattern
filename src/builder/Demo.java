@@ -32,6 +32,12 @@ public class Demo {
 
     }
 }
+//..................................................
+// Handle Complex parameters and Multiple Constructor
+// build a valid instance of Model by validate in Builder
+// seperate the Construction from Representation
+
+//https://www.developer.com/java/data/implementing-builder-patterns-in-java.html
 //https://www.baeldung.com/kotlin/builder-pattern
 //https://sourcemaking.com/design_patterns/builder
 //https://sourcemaking.com/design_patterns/builder/java/1
