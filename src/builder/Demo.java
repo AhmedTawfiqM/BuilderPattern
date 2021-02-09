@@ -21,7 +21,7 @@ public class Demo {
                 .build();
 
         //AT Best Practice
-        FoodK2 foodK2 = new FoodK2.Builder()
+        FoodK2 foodK2 = new FoodK2.Builder("ID-12")
                 .bread("")
                 .condiments("")
                 .fish("")
@@ -33,9 +33,15 @@ public class Demo {
     }
 }
 //..................................................
+//Flexibility and Readability of Code
 // Handle Complex parameters and Multiple Constructor
 // build a valid instance of Model by validate in Builder
-// seperate the Construction from Representation
+// seperate and decouple the Construction from Representation
+// make parameters to be manageable
+// control about optional and Mandatory fields from One Builder
+//
+//.............................
+//setter injector is good but it may create invalid  object of The Model (correct syntax but wrong valid object)
 
 //https://www.developer.com/java/data/implementing-builder-patterns-in-java.html
 //https://www.baeldung.com/kotlin/builder-pattern
